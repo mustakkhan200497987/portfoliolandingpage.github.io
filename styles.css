@@ -403,6 +403,7 @@ form {
 .social {
   text-align: center;
   margin: 2rem;
+  background-color: rgb(0, 0, 0);
 }
 
 .socicons {
@@ -415,6 +416,7 @@ footer {
   box-shadow: 0px -2px 3px #f1f1f1;
   text-align: center;
   padding: 2rem;
+   background-color: rgb(0, 0, 0);
 }
 
 /* Scroll to top button starts */
