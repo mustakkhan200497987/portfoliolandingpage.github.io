@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serf;
-   color: #eeebeb;
+   color: #ffffff;
 }
 
 ul li {
@@ -44,7 +44,7 @@ a:hover {
 
 /* Dark theme starts*/
 body.dark {
-  background-color: #1e272e;
+  background-color: #ffffff;
 }
 
 body.dark .bar {
