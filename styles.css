@@ -923,7 +923,7 @@ footer {
 .pictures_container{
   display:flex;
   padding: 5px;
-  max-width: 100px;
+  max-width: 87px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -931,7 +931,7 @@ footer {
 }
 .column {
   float: left;
-  width: 100%;
+  width: 33.33%;
   padding: 10px;
 }
 .row::after {
