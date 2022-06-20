@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="CSS/styles.css" />
 
-    <link rel="stylesheet" href="styles.css" />
-
-
-    <link rel="stylesheet" href="lightbox.css"/>
+    <!-- Simple lightbox CSS -->
+    <link rel="stylesheet" href="CSS/lightbox.css"/>
 
   
 
     <title>Farmington Landing Page</title>
   </head>
-  <body ]>
-    <section>
+  <body >
     <nav>
       <a href="index.html" class="logo">
         <h1>
@@ -25,7 +24,7 @@
         </h1>
       </a>
 
-    
+      
 
       <ul>
         <li class="nav-item">
@@ -47,7 +46,7 @@
   
     </nav>
 
-    
+    <!-- Hero section -->
     <section class="hero">
       <div class="intro-text">
         <h1>
@@ -72,7 +71,7 @@
       
     </section>
 
-
+    <!-- About section -->
     <section class="about" id="about">
       <h3>Farmington</h3>
       <p>
@@ -85,19 +84,19 @@
       </p>
 
      
-      </section>
-   
-      <div class="row">
-  <div class="column">
-    <img src="./Images/farmington_market.jpeg" alt="marketscreen" style="width:100%"/>
-  </div>
-  <div class="column">
-    <img src="./Images/farmington_news.jpeg" alt="marketscreen" style="width:95%"/>
-  </div>
-  <div class="column">
-     <img src="./Images/farmington_weather.jpeg" alt="marketscreen" style="width:90%"/>
-  </div>
-</div>
+    </section>
+    <div class="pictures_container">
+      
+      <div class="column">
+        <img src="./Images/farmington_market.jpeg" alt="marketscreen" style="width:100%">
+      </div>
+      <div class="column">
+         <img src="./Images/farmington_news.jpeg" alt="marketscreen"  style="width:100%"/>
+      </div>
+      <div class="column">
+        <img src="./Images/farmington_weather.jpeg" alt="marketscreen" style="width:100%"/>
+      </div>
+    </div>
 
     <section class="about" id="stars">
       <h3>Our Story</h3>
@@ -135,26 +134,15 @@
       </div>
     </section>
 
-    <script src="app.js"></script>
-
-  
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+   
 
    
-    <script src="assets/js/simple-lightbox.min.js"></script>
-    <script>
-      var lightbox = new SimpleLightbox(".stars-gallery a");
-    </script>
-    </section>
-  </body>
-   <!-- Social icons -->
+
+    <!-- Social icons -->
     <section class="social" id="sub">
       <h3>Contact Us</h3>
       <h3>437-679-3910</h3>
-      <h3>Contact with us on Social Media</h3>
+      <h3>Connect with us on Social Media</h3>
       <div class="socicons">
         <a href="https://twitter.com/MustakK57416674"> <ion-icon name="logo-twitter"></ion-icon> </a>
         <a href="https://instagram.com/maan_pb19?utm_medium=copy_link"> <ion-icon name="logo-instagram"></ion-icon> </a>
@@ -162,4 +150,29 @@
       </div>
     </section>
 
+    <footer>&copy;2022. All Rights Reserverd</footer>
+
+    <!-- Scroll to top button -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.png"
+        class="socicon up-arrow"
+        alt="up-arrow"
+    /></i>
+
+    <!-- Web page script -->
+    <script src="JS/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Simple lightbox -->
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox(".stars-gallery a");
+    </script>
+  </body>
 </html>
