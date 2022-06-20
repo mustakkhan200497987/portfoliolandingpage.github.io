@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serf;
-   color: #ffffff;
+   background-color: #ffffff;
 }
 
 ul li {
@@ -273,8 +273,8 @@ iframe {
 /* About section start*/
 .about {
   position: relative;
-  background: url("./Images/comingsoon.jpg") no-repeat top center/cover;
-  height: 600px;
+  background: url("./Images/comingsoon.jpg") ;
+  height:1000px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,7 +293,7 @@ iframe {
 }
 
 .about h3 {
-  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  text-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 
 .about p {
