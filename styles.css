@@ -933,6 +933,7 @@ footer {
   float: left;
   width: 100%;
   padding: 10px;
+   justify-content: center;
 }
 .row::after {
   content: "";
