@@ -273,7 +273,7 @@ iframe {
 /* About section start*/
 .about {
   position: relative;
-  background: url("./Images/comingsoon.jpg") ;
+
   height:1000px;
   display: flex;
   align-items: center;
