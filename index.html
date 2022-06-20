@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- Simple lightbox CSS -->
+    <link rel="stylesheet" href="CSS/lightbox.css"/>
+
+  
+
+    <title>Farmington Landing Page</title>
+  </head>
+  <body class="bgimage" id="index">
+    <nav>
+      <a href="index.html" class="logo">
+        <h1>
+          <span class="jab">farming</span><span class="tv">ton</span
+          ><span class="fist">&#127806;</span>
+        </h1>
+      </a>
+
+      <!-- Dark/light theme switcher -->
+      <div class="theme-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+          <ion-icon name="moon-outline" class="moon"></ion-icon>
+          <div class="switcher"></div>
+        </label>
+      </div>
+
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stars" class="nav-link" id="nav-link">Our Story</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >Team</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Contect</a>
+        </li>
+      </ul>
+
+  
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="intro-text">
+        <h1>
+          <span class="hear"> Farmers are the persons who provide us</span> <br />
+          <span class="connecting"> Food to eat.</span>
+        </h1>
+        <p>
+          This application was developed for farmers  to provide some ease in storing information, getting latest updates with up to date weather information, and pop-up notifications. - 
+
+        </p>
+        <a class="btn red" href="#">Learn More</a>
+        <a class="btn blue" href="#">Download</a>
+      </div>
+     
+      <h2>
+        <div class="pictures_container">
+            
+        <img src="./Images/WhatsApp Image 2022-04-01 at 3.51.20 PM.jpeg" alt="spalishscreen" />
+      
+      </div>
+      </h2>
+      
+    </section>
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <h3>Farmington</h3>
+      <p>
+        Our primary objective is to Providing with the news facility for all the latest information available which is best for the farmers
+      </p>
+
+      <h3>Its not About the Farmers Only!</h3>
+      <p>
+        This is best for both farmers and customers.By Enabling the service of marketplace we are solving the main problem of the gap between the farmers and customers.
+      </p>
+
+     
+    </section>
+    <div class="pictures_container">
+            
+      <img src="./Images/farmington_market.jpeg" alt="marketscreen" />
+
+      <img src="./Images/farmington_news.jpeg" alt="marketscreen" />
+
+      <img src="./Images/farmington_weather.jpeg" alt="marketscreen" />
+    
+    </div>
+
+    <section class="about" id="stars">
+      <h3>Our Story</h3>
+      <p>
+        We are the team of 3 members who are studing at Georgian College.
+      </p>
+
+     
+
+     
+    </section>
+   
+      
+
+    <section class="about" id="stakeholders">
+      <h3>Team</h3>
+      <div class="stakeholders">
+        <div class="persons">
+          <div class="person-1">
+            
+            <p class="name">Nisal Padduka</p>
+            <p class="role">Developer</p>
+          </div>
+          <div class="person-2">
+   
+            <p class="name">Radhika patel</p>
+            <p class="role">Project Manager</p>
+          </div>
+          <div class="person-3">
+           
+            <p class="name">Mustak </p>
+            <p class="role">Designer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+   
+
+    <!-- Social icons -->
+    <section class="social" id="sub">
+      <h3>Contect Us</h3>
+      <h3>437-679-3910</h3>
+      <h3>Connect with us on Social Media</h3>
+      <div class="socicons">
+        <a href="https://twitter.com/MustakK57416674"> <ion-icon name="logo-twitter"></ion-icon> </a>
+        <a href="https://instagram.com/maan_pb19?utm_medium=copy_link"> <ion-icon name="logo-instagram"></ion-icon> </a>
+        <a href="mailto:Mustak_khan786@yahoo.com"> <ion-icon name="logo-facebook"></ion-icon> </a>
+      </div>
+    </section>
+
+    <footer>&copy;2022. All Rights Reserverd</footer>
+
+    <!-- Scroll to top button -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="assets/icons/icons8-upward-arrow.png"
+        class="socicon up-arrow"
+        alt="up-arrow"
+    /></i>
+
+    <!-- Web page script -->
+    <script src="JS/app.js"></script>
+
+    <!-- Ion icons CDN -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <!-- Simple lightbox -->
+    <script src="assets/js/simple-lightbox.min.js"></script>
+    <script>
+      var lightbox = new SimpleLightbox(".stars-gallery a");
+    </script>
+  </body>
+</html>
