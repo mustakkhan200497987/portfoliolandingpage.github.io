@@ -1,40 +1,68 @@
-// Hamburger menu selections
-const hamburger = document.querySelector("#hamburger");
-const navMenu = document.querySelector("ul");
-const navLink = document.querySelectorAll("#nav-link");
+const navId = document.getElementById("nav_menu"),
+  ToggleBtnId = document.getElementById("toggle_btn"),
+  CloseBtnId = document.getElementById("close_btn");
 
-// scroll-to-top selection
-const scrollUp = document.querySelector("#scroll-up");
-
-// Hamburger menu functionality
-hamburger.addEventListener("click", openMenu);
-
-// Theme switcher selection
-const checkbox = document.querySelector("#checkbox");
-
-function openMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
-
-// Close menu on nav menu clicks
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}
-
-// scroll to top functionality
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
-  });
+// ==== SHOW MENU ==== //
+ToggleBtnId.addEventListener("click", () => {
+  navId.classList.add("show");
 });
 
-// Theme switcher functionality
-checkbox.addEventListener("change", () => {
-  // Toggle website theme
-  document.body.classList.toggle("dark");
+// ==== HIDE MENU ==== //
+CloseBtnId.addEventListener("click", () => {
+  navId.classList.remove("show");
+});
+
+// ==== Animate on Scroll Initialize  ==== //
+AOS.init();
+
+// ==== GSAP Animations ==== //
+// ==== LOGO  ==== //
+gsap.from(".logo", {
+  opacity: 0,
+  y: -10,
+  delay: 1,
+  duration: 0.5,
+});
+// ==== NAV-MENU ==== //
+gsap.from(".nav_menu_list .nav_menu_item", {
+  opacity: 0,
+  y: -10,
+  delay: 1.4,
+  duration: 0.5,
+  stagger: 0.3,
+});
+// ==== TOGGLE BTN ==== //
+gsap.from(".toggle_btn", {
+  opacity: 0,
+  y: -10,
+  delay: 1.4,
+  duration: 0.5,
+});
+// ==== MAIN HEADING  ==== //
+gsap.from(".main-heading", {
+  opacity: 0,
+  y: 20,
+  delay: 2.4,
+  duration: 1,
+});
+// ==== INFO TEXT ==== //
+gsap.from(".info-text", {
+  opacity: 0,
+  y: 20,
+  delay: 2.8,
+  duration: 1,
+});
+// ==== CTA BUTTONS ==== //
+gsap.from(".btn_wrapper", {
+  opacity: 0,
+  y: 20,
+  delay: 2.8,
+  duration: 1,
+});
+// ==== TEAM IMAGE ==== //
+gsap.from(".team_img_wrapper img", {
+  opacity: 0,
+  y: 20,
+  delay: 3,
+  duration: 1,
 });
